@@ -1,7 +1,7 @@
 import time
 clase = []
 promedio_clase = []
-i = True
+a = True
 
 
 def menu():
@@ -39,7 +39,7 @@ def notas():
         try:
             n = float(input("Ingrese la nota: "))
         except ValueError:
-            print("")
+            print("Ingrese una nota válida.")
             continue
         if n == 123:
             i = False
@@ -149,7 +149,7 @@ def limpiar_nyt():
 
 def salir():
 
-    while i:
+    while a:
         print()
         print("Saliendo, hasta luego.")
         break
